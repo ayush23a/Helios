@@ -21,7 +21,7 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-2">
           <Link
             className="rounded-lg border border-zinc-200 bg-white p-6 transition hover:border-zinc-400"
-            href="/privacy-policy"
+            href="/routes/privacy-policy"
           >
             <h2 className="text-xl font-semibold">Privacy Policy</h2>
             <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -32,7 +32,7 @@ export default function Home() {
 
           <Link
             className="rounded-lg border border-zinc-200 bg-white p-6 transition hover:border-zinc-400"
-            href="/terms-and-conditions"
+            href="/routes/terms-and-conditions"
           >
             <h2 className="text-xl font-semibold">Terms and Conditions</h2>
             <p className="mt-3 text-sm leading-6 text-zinc-600">
