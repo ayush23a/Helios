@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import TermsNCondition from "../components/TermsNCondition";
+import TermsNCondition from "../../components/TermsNCondition";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions | [App Name]",
