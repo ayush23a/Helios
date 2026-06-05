@@ -9,7 +9,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4 sm:px-6 md:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="glassmorphism rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between shadow-2xl shadow-black/40">
+        <div className="glassmorphism rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between bg-white/10
+                    backdrop-blur-sm
+                    shadow-2xl shadow-black/40
+                    border border-white/10
+      ">
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* Minimalist Planet Icon */}
@@ -24,13 +28,13 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
-            <a href="#features" className="hover:text-white transition-colors">
+            <a href="/#features" className="hover:text-white transition-colors">
               Features
             </a>
-            <a href="#explore" className="hover:text-white transition-colors">
+            <a href="/#explore" className="hover:text-white transition-colors">
               Explore Prompts
             </a>
-            <a href="#safety" className="hover:text-white transition-colors">
+            <a href="/#safety" className="hover:text-white transition-colors">
               Safety & Trust
             </a>
             <Link href="/privacy" className="hover:text-white transition-colors">
@@ -44,7 +48,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="#download"
+              href="/#download"
               className="relative inline-flex items-center justify-center px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-brand-orange to-brand-gold rounded-full hover:brightness-110 shadow-lg shadow-brand-orange/20 hover:shadow-brand-orange/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
               Get Helios
@@ -87,23 +91,29 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden mt-3 mx-2">
-          <div className="glassmorphism rounded-2xl p-6 flex flex-col gap-4 shadow-2xl border border-white/10">
+          <div className="glassmorphism rounded-2xl p-6 flex flex-col gap-4 bg-gradient-to-br
+                          from-white/20
+                          to-white/5
+                          backdrop-blur-sm
+                          border border-white/20
+                          shadow-[0_8px_32px_rgba(31,38,135,0.37)]
+          ">
             <a
-              href="#features"
+              href="/#features"
               onClick={() => setIsOpen(false)}
               className="text-zinc-300 hover:text-white font-medium py-1"
             >
               Features
             </a>
             <a
-              href="#explore"
+              href="/#explore"
               onClick={() => setIsOpen(false)}
               className="text-zinc-300 hover:text-white font-medium py-1"
             >
               Explore Prompts
             </a>
             <a
-              href="#safety"
+              href="/#safety"
               onClick={() => setIsOpen(false)}
               className="text-zinc-300 hover:text-white font-medium py-1"
             >
@@ -125,7 +135,7 @@ export default function Navbar() {
             </Link>
             <hr className="border-white/10 my-1" />
             <a
-              href="#download"
+              href="/#download"
               onClick={() => setIsOpen(false)}
               className="w-full text-center py-3 text-sm font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-brand-orange to-brand-gold rounded-full shadow-lg shadow-brand-orange/20"
             >

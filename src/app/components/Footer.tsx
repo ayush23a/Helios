@@ -34,17 +34,17 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
-                <a href="#features" className="text-zinc-400 hover:text-white transition-colors">
+                <a href="/#features" className="text-zinc-400 hover:text-white transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#explore" className="text-zinc-400 hover:text-white transition-colors">
+                <a href="/#explore" className="text-zinc-400 hover:text-white transition-colors">
                   Explore Prompts
                 </a>
               </li>
               <li>
-                <a href="#safety" className="text-zinc-400 hover:text-white transition-colors">
+                <a href="/#safety" className="text-zinc-400 hover:text-white transition-colors">
                   Safety & Privacy
                 </a>
               </li>
