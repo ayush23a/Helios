@@ -16,6 +16,9 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Helios | AI Prompts From Across The Galaxy",
+  icons: {
+    icon: "/space.ico"
+  },
   description: "Discover, craft, and share premium AI prompts. A cosmic creative ecosystem with gorgeous prompts for ChatGPT, Midjourney, and more.",
   keywords: ["AI Prompts", "ChatGPT Prompts", "Midjourney Prompts", "Prompt Engineering", "Cosmic UI"],
   authors: [{ name: "Achaia Labs" }],

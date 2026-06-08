@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,15 @@ export default function Navbar() {
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* Minimalist Planet Icon */}
-            <div className="relative w-8 h-8 rounded-full bg-gradient-to-tr from-brand-orange to-brand-gold flex items-center justify-center shadow-md shadow-brand-orange/30 group-hover:scale-105 transition-transform">
-              <div className="absolute w-10 h-2 border border-white/50 rounded-full rotate-[-20deg]" />
-              <div className="w-2.5 h-2.5 rounded-full bg-cosmic-dark" />
-            </div>
+            <Image
+              src="https://onzhzfcewjlhvhgmwqri.supabase.co/storage/v1/object/public/images/prompts/ic_launcher-playstore_1780863708521.webp"
+              alt="Helios Logo"
+              width={36}
+              height={36}
+              priority
+              className="rounded-xl shadow-md shadow-brand-orange/30 group-hover:scale-105 transition-all duration-200"
+            />
+
             <span className="text-xl font-bold tracking-wider font-display text-white group-hover:text-brand-gold transition-colors">
               Helios
             </span>

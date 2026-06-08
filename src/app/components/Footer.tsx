@@ -69,7 +69,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@achaialabs.tech"
+                  href="mailto:contact@achaialabs.tech"
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5"
                 >
                   <svg className="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
