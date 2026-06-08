@@ -7,49 +7,69 @@ import Footer from "./Footer";
 
 const privacySections = [
   {
+    title: "Effective Date and Contact",
+    content:
+      "This Privacy Policy applies to Helios, operated by Achaia Labs. If you have questions or requests about this Policy or your personal data, contact us at privacy@achaialabs.tech.",
+  },
+  {
     title: "Information We Collect",
     content:
-      "We may collect information you provide directly, such as your name, email address, account details, messages, and any content you submit while using Helios. We may also collect basic usage data, device information, log data, and cookies or similar technologies to help operate and improve the service.",
+      "We may collect information you provide directly, such as your name, email address, account details, feedback, support messages, saved prompts, and any other content you submit while using Helios. We may also collect basic device information, app usage data, crash logs, diagnostic data, and similar technical information to operate and improve the service.",
   },
   {
     title: "How We Use Information",
     content:
-      "We use collected information to provide, maintain, secure, and improve Helios, respond to support requests, personalize the user experience, send service-related updates, prevent fraud or abuse, and comply with legal obligations.",
+      "We use information to provide and maintain Helios, personalize your experience, process requests and support inquiries, send service-related notices, improve features and performance, detect abuse or fraud, enforce our terms, and comply with legal obligations.",
+  },
+  {
+    title: "Prompts, Content, and Generated Results",
+    content:
+      "Helios may allow you to submit prompts, ideas, or other content for generating images or videos. We may process that content to provide the service, moderate abuse, troubleshoot issues, and improve the app. Do not submit sensitive information unless you are comfortable with it being processed for these purposes.",
+  },
+  {
+    title: "Payments and Subscriptions",
+    content:
+      "If you purchase a subscription or other paid feature, payment may be processed by the relevant app store or payment provider. We may receive limited transaction information, such as purchase status or subscription status, but we do not intentionally store full card details unless we clearly tell you otherwise.",
   },
   {
     title: "Sharing of Information",
     content:
-      "We do not sell your personal information. We may share information with trusted service providers who help us operate the app, when required by law, to protect our rights or users, or as part of a business transfer such as a merger, acquisition, or asset sale.",
+      "We do not sell your personal information. We may share information with trusted service providers who help us run the app, with payment and subscription providers, when required by law, to protect our rights or users, or as part of a merger, acquisition, or other business transfer.",
   },
   {
-    title: "Cookies and Tracking",
+    title: "Cookies, Analytics, and Similar Technologies",
     content:
-      "Helios may use cookies, local storage, analytics tools, or similar technologies to remember preferences, understand usage, and improve performance. You can usually manage cookies through your browser settings.",
+      "Helios may use cookies, local storage, analytics tools, SDKs, or similar technologies to remember preferences, understand how the app is used, and improve performance and reliability. Where required, you can manage cookies through your browser or device settings.",
   },
   {
     title: "Data Retention",
     content:
-      "We retain personal information only for as long as reasonably necessary for the purposes described in this policy, unless a longer retention period is required or permitted by law.",
+      "We retain personal information only for as long as reasonably necessary for the purposes described in this Policy, unless a longer retention period is required or permitted by law. We may also retain limited records to comply with legal, tax, accounting, security, or dispute-resolution obligations.",
   },
   {
     title: "Data Security",
     content:
-      "We use reasonable technical and organizational safeguards to protect your information. However, no method of transmission or storage is completely secure, so we cannot guarantee absolute security.",
+      "We use reasonable technical and organizational safeguards to protect your information. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.",
   },
   {
-    title: "Your Choices and Rights",
+    title: "Your Rights and Choices",
     content:
-      "Depending on your location, you may have rights to access, update, delete, restrict, or object to certain uses of your personal information. To make a request, contact us at privacy@achaialabs.tech.",
+      "Depending on where you live, you may have rights to access, correct, delete, restrict, or object to certain processing of your personal information. You may also be able to withdraw consent where processing is based on consent. To make a request, contact us at privacy@achaialabs.tech.",
   },
   {
     title: "Children's Privacy",
     content:
-      "Helios is not intended for children under the age of 13, or the minimum age required in your jurisdiction. We do not knowingly collect personal information from children without appropriate consent.",
+      "Helios is not intended for children under 13, or the minimum age required in your jurisdiction. We do not knowingly collect personal information from children without appropriate consent. If you believe a child has provided us personal information, contact us and we will take appropriate steps.",
+  },
+  {
+    title: "International Data Transfers",
+    content:
+      "Your information may be processed in countries other than the one where you live. Where required, we take steps intended to provide appropriate protection for cross-border transfers.",
   },
   {
     title: "Changes to This Policy",
     content:
-      "We may update this Privacy Policy from time to time. When we make changes, we will update the effective date and may provide additional notice where appropriate.",
+      "We may update this Privacy Policy from time to time. When we do, we will revise the effective date and may provide additional notice when appropriate.",
   },
 ];
 
@@ -201,13 +221,11 @@ export default function PrivacyPolicy() {
                   <div className="pt-2 flex flex-col gap-2 text-sm font-semibold">
                     <span className="text-brand-gold">
                       Email:{" "}
-                      <a href="mailto:privacy@achaialabs.tech" className="hover:text-brand-orange transition-colors">
-                        privacy@achaialabs.tech
+                      <a href="mailto:contact@achaialabs.tech" className="hover:text-brand-orange transition-colors">
+                        contact@achaialabs.tech
                       </a>
                     </span>
-                    <span className="text-zinc-500 font-normal">
-                      Company Address: Achaia Labs, Galaxy Headquarters, Space Sector 4
-                    </span>
+                  
                   </div>
                 </section>
               </div>
