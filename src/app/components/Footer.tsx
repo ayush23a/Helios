@@ -68,6 +68,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/delete-account" className="text-zinc-400 hover:text-white transition-colors">
+                  Delete Account
+                </Link>
+              </li>
+              <li>
                 <a
                   href="mailto:contact@achaialabs.tech"
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5"
