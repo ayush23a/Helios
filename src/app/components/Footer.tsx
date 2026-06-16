@@ -68,7 +68,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/delete-account" className="text-zinc-400 hover:text-white transition-colors">
+                <Link href="/data-safety" className="text-zinc-400 hover:text-white transition-colors">
                   Data Safety
                 </Link>
               </li>
