@@ -31,20 +31,19 @@ export default function DownloadSection() {
 
           {/* Download CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5 relative">
-            {/* Google Play Store Button */}
+            {/* Google Play Store Official Badge */}
             <a
               href={playStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center gap-4 px-8 py-4 bg-zinc-900 border border-white/15 hover:border-brand-gold hover:bg-black rounded-2xl transition-all shadow-xl hover:scale-105 group"
+              className="inline-block transition-transform hover:scale-105 active:scale-95"
             >
-              <svg className="w-8 h-8 text-white group-hover:text-brand-gold transition-colors" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 01-.61-1.39V3.204c0-.528.204-1.012.61-1.39zM14.735 12.943l3.072-3.072 3.593 2.052a2 2 0 010 3.473l-3.593 2.053-3.072-3.106zm-1.886-1.886L3.9 3.011c-.04-.022-.08-.046-.12-.066L12.85 11.057zm0 1.886l-9.071 8.113c.04-.02.08-.044.12-.066l8.951-5.112v-2.935z" />
-              </svg>
-              <div className="text-left">
-                <p className="text-[10px] text-zinc-400 uppercase tracking-widest leading-none">Available Now on</p>
-                <p className="text-base font-extrabold text-white mt-1">Google Play</p>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                className="h-20 w-auto object-contain"
+              />
             </a>
 
             {/* Apple App Store Button - Coming Soon */}

@@ -93,12 +93,14 @@ export default function AppShowcase() {
                 href="https://play.google.com/store/apps/details?id=ai.achaialabs.helios"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-brand-orange to-brand-gold text-white font-bold text-xs uppercase tracking-wider rounded-full shadow hover:brightness-110 transition-all"
+                className="inline-block transition-transform hover:scale-105 active:scale-95"
               >
-                <span>Download on Google Play</span>
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  className="h-16 w-auto object-contain"
+                />
               </a>
             </div>
           </div>
