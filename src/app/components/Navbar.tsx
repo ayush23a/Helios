@@ -1,114 +1,36 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const playStoreUrl = "https://play.google.com/store/apps/details?id=ai.achaialabs.helios";
-  const appIcon = "https://play-lh.googleusercontent.com/wsT37_7zZBYThYH4FEn6cQk_mD94uwcW8xOJyCdWwauVYBKK_jnVpciFB170msTmF7Hzhl0EuGF-0QfBRwZ1b3Y=w512-h512";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4 sm:px-6 md:px-8">
-      <div className="mx-auto max-w-6xl">
-        <div className="glassmorphism rounded-full px-5 sm:px-7 py-3 flex items-center justify-between bg-zinc-950/80 backdrop-blur-md border border-white/10 shadow-xl">
-          {/* Logo Section */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8 rounded-xl overflow-hidden shadow-md shadow-brand-orange/20">
-              <Image
-                src={appIcon}
-                alt="Helios Icon"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight font-display text-white group-hover:text-brand-gold transition-colors leading-none">
-                Helios
-              </span>
-              <span className="text-[9px] uppercase tracking-wider text-zinc-400 font-medium">AI Prompt Library</span>
-            </div>
-          </Link>
+    <header className="w-full px-4 sm:px-6 py-4 sm:py-5">
+      <div className="mx-auto max-w-6xl flex items-center justify-between gap-2">
+        {/* Sleek Minimalist Brand Mark */}
+        <Link href="/" className="flex items-center gap-2 group shrink-0">
+          <span className="text-xl sm:text-2xl font-extrabold tracking-tight font-brand text-white group-hover:text-brand-gold transition-colors leading-none">
+            Helios<span className="text-brand-orange font-black">.</span>
+          </span>
+          <span className="hidden sm:inline-flex text-[9.5px] text-zinc-400 font-semibold px-2.5 py-0.5 bg-zinc-900/90 border border-zinc-800 rounded-full tracking-wider uppercase">
+            AI Prompt App
+          </span>
+        </Link>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-zinc-400">
-            <a href="#showcase" className="hover:text-white transition-colors">
-              App Screenshots
-            </a>
-            <a href="#features" className="hover:text-white transition-colors">
-              Features
-            </a>
-            <a href="#download" className="hover:text-white transition-colors">
-              Download
-            </a>
-            <Link href="/privacy" className="hover:text-white transition-colors">
-              Privacy
-            </Link>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-3">
-            <a
-              href={playStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative inline-flex items-center justify-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-brand-orange to-brand-gold rounded-full hover:brightness-110 shadow-md transition-all"
-            >
-              <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 01-.61-1.39V3.204c0-.528.204-1.012.61-1.39zM14.735 12.943l3.072-3.072 3.593 2.052a2 2 0 010 3.473l-3.593 2.053-3.072-3.106zm-1.886-1.886L3.9 3.011c-.04-.022-.08-.046-.12-.066L12.85 11.057zm0 1.886l-9.071 8.113c.04-.02.08-.044.12-.066l8.951-5.112v-2.935z" />
-              </svg>
-              <span>Get on Play Store</span>
-            </a>
-          </div>
-
-          {/* Mobile Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-zinc-400 hover:text-white focus:outline-none"
-            aria-label="Toggle Menu"
+        {/* Responsive Download CTA Button */}
+        <div className="shrink-0">
+          <a
+            href={playStoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-brand-orange to-brand-gold hover:brightness-110 shadow-lg shadow-brand-orange/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+            Download Now
+          </a>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden mt-3 mx-2">
-          <div className="glassmorphism rounded-2xl p-5 flex flex-col gap-3 bg-zinc-950/90 border border-white/10 shadow-2xl">
-            <a href="#showcase" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white font-medium py-1 text-sm">
-              App Screenshots
-            </a>
-            <a href="#features" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white font-medium py-1 text-sm">
-              Features
-            </a>
-            <a href="#download" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white font-medium py-1 text-sm">
-              Download
-            </a>
-            <Link href="/privacy" onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-white font-medium py-1 text-sm">
-              Privacy Policy
-            </Link>
-            <hr className="border-white/10 my-1" />
-            <a
-              href={playStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-              className="w-full text-center py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-brand-orange to-brand-gold rounded-full shadow"
-            >
-              Get on Play Store
-            </a>
-          </div>
-        </div>
-      )}
-    </nav>
+    </header>
   );
 }

@@ -1,21 +1,15 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import AppShowcase from "./components/AppShowcase";
-import FeatureSection from "./components/FeatureSection";
-import DownloadSection from "./components/DownloadSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col justify-between bg-zinc-950 text-white font-sans selection:bg-brand-orange selection:text-white">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow flex items-center justify-center">
         <HeroSection />
-        <AppShowcase />
-        <FeatureSection />
-        <DownloadSection />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

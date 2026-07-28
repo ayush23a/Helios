@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Inter, Outfit, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,17 +14,23 @@ const outfit = Outfit({
   display: "swap",
 });
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Helios | AI Prompts From Across The Galaxy",
+  title: "Helios: AI Prompt App",
   icons: {
     icon: "/space.ico"
   },
-  description: "Discover, craft, and share premium AI prompts. A cosmic creative ecosystem with gorgeous prompts for ChatGPT, Midjourney, and more.",
-  keywords: ["AI Prompts", "ChatGPT Prompts", "Midjourney Prompts", "Prompt Engineering", "Cosmic UI"],
+  description: "Discover, craft, and share premium AI prompts with Helios: AI Prompt App. Designed for creators, developers, students, and professionals.",
+  keywords: ["Helios", "Helios: AI Prompt App", "AI Prompts", "ChatGPT Prompts", "Midjourney Prompts", "Prompt Engineering"],
   authors: [{ name: "Achaia Labs" }],
   openGraph: {
-    title: "Helios | AI Prompts From Across The Galaxy",
-    description: "Discover, craft, and share premium AI prompts. A cosmic creative ecosystem.",
+    title: "Helios: AI Prompt App",
+    description: "Master the art of AI with curated prompts for ChatGPT, Claude, Gemini, and Midjourney.",
     type: "website",
   },
 };
@@ -35,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`h-full max-w-full overflow-x-hidden ${inter.variable} ${outfit.variable} antialiased scroll-smooth`}>
+    <html lang="en" className={`h-full max-w-full overflow-x-hidden ${inter.variable} ${outfit.variable} ${spaceGrotesk.variable} antialiased scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-cosmic-dark text-foreground font-sans relative selection:bg-brand-orange/30 selection:text-white">
         {/* Bulletproof wrapper to contain all absolute overflows */}
         <div className="relative w-full overflow-x-hidden flex flex-col flex-grow">
