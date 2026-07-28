@@ -7,8 +7,16 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "onzhzfcewjlhvhgmwqri.supabase.co",
       },
+      {
+        protocol: "https",
+        hostname: "play-lh.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "play.google.com",
+      },
     ],
-  },/* config options here */
+  },
 };
 
 export default nextConfig;
