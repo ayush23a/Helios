@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import AppShowcase from "./components/AppShowcase";
 import FeatureSection from "./components/FeatureSection";
 import ExploreSection from "./components/ExploreSection";
 import SafetySection from "./components/SafetySection";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <AppShowcase />
         <FeatureSection />
         <ExploreSection />
         <SafetySection />
@@ -21,4 +23,3 @@ export default function Home() {
     </>
   );
 }
-
