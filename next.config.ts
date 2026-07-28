@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         hostname: "play-lh.googleusercontent.com",
       },
     ],
-  },/* config options here */
+  },
 };
 
 export default nextConfig;
