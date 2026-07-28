@@ -1,1 +1,3 @@
+# app-ads.txt specification v1.1 by IAB Tech Lab
+# App: Helios: AI Prompt Library
 google.com, pub-9204160176455905, DIRECT, f08c47fec0942fa0
